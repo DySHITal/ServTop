@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 10rem;
+    color: #179edd;
+    text-shadow: 5px 8px 12px black;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.right {
+    width: 50%;
+    overflow: hidden;
+}
+
+.right img {
+    width: 100%;
+}
+
+.left {
+    width: 50%;
+    font-size: 2rem;
+    border-right: 2px solid #179edd;
+}
+
+.caja {
+    display: flex;
+    margin: 1rem;
+}
+
+.caja h3 {
+    margin-top: 1.5rem;
+    font-size: 3.5rem;
+}
+
+.icono {
+    font-size: 5rem;
+    margin: 1rem 2rem;
+    color: #179edd;
+}
+
+.parrafo {
+    text-align: center;
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
+
+.mapa {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.izq {
+    width: 50%;
+    overflow: hidden;
+    border-right: 2px solid #179edd;
+}
+
+.der {
+    width: 50%;
+    font-size: 2rem;
+}
+
+.der h3 {
+    color: #179edd;
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 5rem;
+}
+/* form */
+.gral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form {
+    width: 80%;
+    padding: 20px;
+}
+
+.row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: .5s;
+}
+
+.inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.inputBox input,
+.textarea textarea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.inputBox input:focus + .text,
+.inputBox input:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+
+.line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    transition: .5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.inputBox input:focus ~ .line,
+.inputBox input:valid ~ .line{
+    height: 100%;
+}
+
+.textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.textarea textarea{
+    height: 100%;
+    resize: none;
+}
+
+.inputBox textarea:focus + .text,
+.inputBox textarea:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+
+.inputBox textarea:focus ~ .line,
+.inputBox textarea:valid ~ .line{
+    height: 100%;
+}
+
+input[type="submit"]{
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #45f3ff;
+    color: #000;
+    font-size: 18px;
+    border-radius: 2px;
+}
+/* form */
+
+
+@media screen and (max-width:800px){
+    h2{
+        font-size: 5rem;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .right, .right img, .left {
+        width: 100%;
+    }
+
+    .mapa{
+        display: block;
+    }
+
+    .izq, .der{
+        width: 100%;
+    }
+}

@@ -1,0 +1,82 @@
+/* slider */
+.slider{
+    width: 100vw;
+    height: 550px;
+}
+.slider ul{
+    margin: auto;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
+}
+@keyframes cambio{
+    0% {background-image: url(../img/jerastone/slide1.png);}
+    25% {background-image: url(../img/jerastone/slide2.png);}
+    50% {background-image: url(../img/jerastone/slide3.jpg);}
+    75% {background-image: url(../img/jerastone/slide4.jpg);}
+    100% {background-image: url(../img/jerastone/slide5.jpg);}
+}
+/* slider */
+/* bottom main index */
+.izq a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+}
+.textos {
+    margin-top: 2rem;
+    margin: 4rem;
+    padding: 0;
+    transition: all .5s ease;
+}
+.contenedor {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    justify-content: space-around;
+}
+.izq {
+    background-color: rgb(229, 196, 117);
+    text-align: end;
+    width: 50%;
+    height: 100%;
+    padding-right: 1em;
+    align-self: center;
+}
+.der {
+    background-color: rgb(31, 30, 30);
+    color: antiquewhite;
+    width: 50%;
+    height: 100%;
+    align-self: center;
+    padding-left: 1%;
+}
+#natural {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3.5rem;
+}
+.textos:hover {
+    font-size: 5rem;
+}
+/* bottom main index */
+
+@media screen and (max-width:800px){
+    .slider{
+        display: none;
+    }
+
+    .textos{
+        font-size: 2rem;
+    }
+
+    #natural{
+        font-size: 2rem;
+    }
+
+    .contenedor{
+        height:30vh;
+    }
+}

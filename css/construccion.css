@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#semititulo {
+    width: 80vw;
+    font-size: 5rem;
+    color: #0783be;
+    text-align: end;
+}
+
+#parrafo {
+    width: 70vw;
+    font-size: 2.5rem;
+    text-align: end;
+}
+
+.g-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.g-item {
+    width: 15vw;
+    height: 15vh;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+
+.img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.sub-titulo {
+    font-size: 2rem;
+    color: #0783be;
+    text-align: center;
+    width: 50%;
+}
+
+.detalle {
+    font-size: 1.2rem;
+    margin: 1rem;
+    color: rgba(128, 128, 128, 1);
+}
+
+.termica {
+    width: 100vw;
+}
+
+.termica > img {
+    width: 100%;
+}
+
+/* ----------form-------- */
+
+.form {
+    display: flex;
+    width: 90%;
+}
+
+.izq {
+    margin: auto;
+    width: 50%;
+    align-items: center;
+}
+
+.izq > h2 {
+    font-size: 4rem;
+    text-align: justify;
+    margin-left: 20rem;
+    color: rgb(229, 196, 117);
+    padding: 5rem;
+}
+
+.izq > p {
+    font-size: 2rem;
+    text-align: justify;
+    margin-left: 20rem;
+    padding: 5rem;
+}
+
+.der {
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
+.input {
+    width: 90%;
+    margin: 1%;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+/* ------------Contacto--------------- */
+.cajaTextoFlex {
+    display: flex;
+    width: 90vw;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cajaImagen {
+    width: 80vw;
+    padding: 5rem;
+    margin: 5rem, 0, 5rem, 0;
+}
+
+.cajaImagen > img {
+    width: 100%;
+    height: 100%;
+}
+
+.cajaTexto {
+    border-top: .5rem solid #0783be;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    line-height: 2.5rem;
+}
+
+.cajaTexto > h3{
+    font-size: 4rem;
+    line-height: 3.5rem;
+}
+
+.botonContacto{
+    width: fit-content;
+    background-color: #0783be;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 1rem, 1rem, 1rem, black;
+    transition: all .5s ease-out;
+}
+
+.botonContacto:hover {
+    background-color: #7295e5;
+    font-size: larger;
+    font-weight:bold;
+}
+
+.botonContacto > a {
+    text-decoration: none;
+    color: black;
+}
+
+#imgLogo {
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+/* -------------Contacto---------------- */
+@media screen and (max-width:800px){
+    #semititulo {
+        font-size: 3rem;
+    }
+
+    #parrafo {
+        font-size: 1.5rem;
+        text-align: center;
+        float: right;
+        margin-right: 1rem;
+    }
+
+    .g-container {
+        display: block;
+    }
+
+    .g-item {
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .termica{
+        display: none;
+    }
+
+    .cajaTextoFlex{
+        width: 90%;
+        margin: 0;
+        display: block;
+    }
+}
